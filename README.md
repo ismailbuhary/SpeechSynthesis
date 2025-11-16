@@ -23,5 +23,8 @@ Start-Sleep -Seconds 5; netstat -ano | Select-String ":5001"
 
 cd kokoro-80.py; ..\..venv\Scripts\python.exe kokoro-80.py
 
-<img width="1057" height="669" alt="image" src="https://github.com/user-attachments/assets/7dd852c8-4725-4a48-8215-6cac49d33fe7" />
+<img width="934" height="659" alt="image" src="https://github.com/user-attachments/assets/56bb3a39-b949-4715-b63f-cab3b49b6ed8" />
+
+
+
 
