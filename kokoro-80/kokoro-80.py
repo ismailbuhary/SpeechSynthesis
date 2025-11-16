@@ -219,4 +219,4 @@ def tts():
 
 if __name__ == "__main__":
     # Host 0.0.0.0 so you can hit it from other devices on LAN if needed
-    app.run(host="172.0.0.1", port=5001, debug=True)
+    app.run(host="172.0.0.1", port=10000, debug=False)
