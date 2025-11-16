@@ -1,0 +1,4 @@
+numpy
+soundfile
+flask
+kokoro==0.9.4
