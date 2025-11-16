@@ -71,10 +71,10 @@ jobs:
   #         service: kokoro-tts
   
   # Option 2: Deploy to Render (requires Render API key in secrets)
-  deploy-render:
-    needs: build
-    runs-on: ubuntu-latest
-     steps:
+    deploy-render:
+      needs: build
+      runs-on: ubuntu-latest
+       steps:
         - uses: actions/checkout@v4
         - name: Deploy to Render
         run: |
