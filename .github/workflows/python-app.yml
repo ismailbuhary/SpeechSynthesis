@@ -83,7 +83,7 @@ jobs:
         - name: Deploy to Render
           run: |
            curl -X POST "https://api.render.com/deploy/srv-xxx" \
-            -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}"
+            -H "Authorization: Bearer ${{ rnd_b2PkLoFpfsR7xu3QJFmyfe5CSPgI }}"
   
   # Option 3: Deploy to Heroku (requires Heroku API key in secrets)
   # deploy-heroku:
