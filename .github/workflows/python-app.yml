@@ -33,14 +33,14 @@ jobs:
         pip install -r **/requirements.txt
         
     - name: Verify kokoro installation
-      working-directory: ./kokoro-80.py
+      working-directory: ./kokoro-80
       run: |
         pip list | grep kokoro || echo "Kokoro not found in pip list"
         python -c "import kokoro; print('✓ Kokoro import successful')"
         python -c "from kokoro import KPipeline; print('✓ KPipeline import successful')"
     
     - name: Lint with flake8
-      working-directory: ./kokoro-80.py
+      working-directory: ./kokoro-80
       run: |
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
