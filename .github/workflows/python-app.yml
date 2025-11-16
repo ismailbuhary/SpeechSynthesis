@@ -75,15 +75,15 @@ jobs:
   #         service: kokoro-tts
   
   # Option 2: Deploy to Render (requires Render API key in secrets)
-  #   deploy-render:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #    steps:
-  #     - uses: actions/checkout@v4
-  #     - name: Deploy to Render
-  #     run: |
-  #      curl -X POST "https://api.render.com/deploy/srv-xxx" \
-  #         -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}"
+  deploy-render:
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: Deploy to Render
+          run: |
+           curl -X POST "https://api.render.com/deploy/srv-xxx" \
+            -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY }}"
   
   # Option 3: Deploy to Heroku (requires Heroku API key in secrets)
   # deploy-heroku:
