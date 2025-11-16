@@ -58,7 +58,7 @@ jobs:
     
     - name: Validate Flask app syntax
       run: |
-        python -m py_compile kokoro-80.py || echo "Syntax check completed"
+        python -m py_compile ./kokoro-80.py || echo "Syntax check completed"
 
   # Optional: Deploy to cloud service
   # Uncomment and configure one of the deployment options below:
